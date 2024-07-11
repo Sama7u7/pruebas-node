@@ -25,13 +25,11 @@ async function ls(folder) {
     }
 
     const isDirectory = stats.isDirectory();
-    const fileType = isDirectory ? "📂" : "file";
+    const fileType = isDirectory ? "📂" : "📄";
     const fileSize = stats.size;
     const fileModified = stats.mtime.toLocaleString();
 
-    return `${fileType} ${file.padEnd(20)} ${fileSize
-      .toString()
-      .padStart(10)} ${fileModified}`;
+    return `${fileType} ${pico.blue(file.padEnd(20))} ${fileSize.toString().padStart(10)} ${pico.yellow(fileModified)}`;
   });
 
   const fileInfo = await Promise.all(filePromises);
