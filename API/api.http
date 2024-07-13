@@ -1,0 +1,13 @@
+GET  http://localhost:4000/ HTTP/1.1
+
+### creando nuevo conductor
+POST http://localhost:4000/drivers
+Content-Type: application/json
+    
+    {
+        "id": 5,
+        "name": "Sergio Perez",
+        "team": "Red Bull Racing",
+        "country": "Mexico",
+        "worldChampionships": 0
+    }

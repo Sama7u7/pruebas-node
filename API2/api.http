@@ -1,0 +1,26 @@
+GET http://localhost:4000/bestsellers
+### Filtrar por categoría
+GET http://localhost:4000/thing?category=electronics
+### Filtrar por precio en rangos
+GET http://localhost:4000/price-range?minPrice=500&maxPrice=1000
+### Crear categoria
+POST http://localhost:4000/category
+Content-Type: application/json
+
+{
+  "category": "new_category",
+  "products": [
+    {
+      "name": "New Product 1",
+      "brand": "Brand 1",
+      "units_sold": 1000,
+      "price": 99.99
+    },
+    {
+      "name": "New Product 2",
+      "brand": "Brand 2",
+      "units_sold": 2000,
+      "price": 199.99
+    }
+  ]
+}

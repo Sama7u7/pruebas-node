@@ -1,0 +1,89 @@
+{
+  "bestsellers": [
+    {
+      "category": "electronics",
+      "products": [
+        {
+          "name": "Apple iPhone 13",
+          "brand": "Apple",
+          "units_sold": 150000000,
+          "price": 999.99
+        },
+        {
+          "name": "Samsung Galaxy S21",
+          "brand": "Samsung",
+          "units_sold": 120000000,
+          "price": 799.99
+        }
+      ]
+    },
+    {
+      "category": "books",
+      "products": [
+        {
+          "name": "Harry Potter and the Sorcerer's Stone",
+          "author": "J.K. Rowling",
+          "units_sold": 120000000,
+          "price": 19.99
+        },
+        {
+          "name": "The Lord of the Rings",
+          "author": "J.R.R. Tolkien",
+          "units_sold": 150000000,
+          "price": 29.99
+        }
+      ]
+    },
+    {
+      "category": "video_games",
+      "products": [
+        {
+          "name": "Minecraft",
+          "developer": "Mojang",
+          "units_sold": 200000000,
+          "price": 26.95
+        },
+        {
+          "name": "Grand Theft Auto V",
+          "developer": "Rockstar Games",
+          "units_sold": 145000000,
+          "price": 29.99
+        }
+      ]
+    },
+    {
+      "category": "clothing",
+      "products": [
+        {
+          "name": "Levi's 501 Original Fit Jeans",
+          "brand": "Levi's",
+          "units_sold": 100000000,
+          "price": 59.99
+        },
+        {
+          "name": "Nike Air Force 1",
+          "brand": "Nike",
+          "units_sold": 80000000,
+          "price": 90
+        }
+      ]
+    },
+    {
+      "category": "new_category",
+      "products": [
+        {
+          "name": "New Product 1",
+          "brand": "Brand 1",
+          "units_sold": 1000,
+          "price": 99.99
+        },
+        {
+          "name": "New Product 2",
+          "brand": "Brand 2",
+          "units_sold": 2000,
+          "price": 199.99
+        }
+      ]
+    }
+  ]
+}

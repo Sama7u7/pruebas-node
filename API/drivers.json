@@ -1,0 +1,32 @@
+{
+  "drivers": [
+    {
+      "id": 1,
+      "name": "Lewis Hamilton",
+      "team": "Mercedes",
+      "country": "United Kingdom",
+      "worldChampionships": 7
+    },
+    {
+      "id": 2,
+      "name": "Max Verstappen",
+      "team": "Red Bull Racing",
+      "country": "Netherlands",
+      "worldChampionships": 2
+    },
+    {
+      "id": 3,
+      "name": "Sebastian Vettel",
+      "team": "Aston Martin",
+      "country": "Germany",
+      "worldChampionships": 4
+    },
+    {
+      "id": 4,
+      "name": "Fernando Alonso",
+      "team": "Alpine",
+      "country": "Spain",
+      "worldChampionships": 2
+    }
+  ]
+}
