@@ -1,30 +1,20 @@
-import { useState } from "react";
+import Navbar from "./Components/Navbar";
 
-import logo from "/letter-s-logo.png";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <div>
-        <img src={logo} className="logo" alt="Vite logo" />
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Navbar />
+      <main>
+        {/* Aquí van los demás componentes y contenido de tu aplicación */}
+        <section>
+          <h1>Welcome to My Website</h1>
+          <p>This is the home page.</p>
+        </section>
+      </main>
+    </div>
   );
-}
+};
 
 export default App;
