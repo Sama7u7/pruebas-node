@@ -40,18 +40,28 @@ function App() {
   }
   return (
     <>
-      <h1>Paste and list</h1>
+    <div className="titulo">
+      <h1>PLAYSTE</h1>
+    </div>
+
+      <div className="search">
       <form onSubmit={handleSearch}>
         <input type="text" value={cancion} onChange={(e) => setCancion(e.target.value)} />
         <button type="submit">Buscar</button>
       </form>
-      {canciones.map((cancion, index) => (
-        <div key={index}>
-          <img src={cancion.data.albumOfTrack.coverArt.sources[0].url} />
-          <h2>{cancion.data.name}</h2>
-          <p>{cancion.data.artists.items.map(artist => artist.profile.name).join(', ')}</p>
-        </div>
-      ))}
+      </div>
+        
+        <div className="grid-container">
+        {canciones.map((cancion, index) => (
+          <div key={index} className="card">
+            <img src={cancion.data.albumOfTrack.coverArt.sources[0].url} alt={cancion.data.name} />
+            <h2>{cancion.data.name}</h2>
+            <p>{cancion.data.artists.items.map(artist => artist.profile.name).join(', ')}</p>
+          </div>
+        ))}
+      </div>
+      
+     
     </>
   );
 }
