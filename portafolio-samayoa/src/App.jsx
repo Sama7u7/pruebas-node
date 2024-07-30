@@ -1,4 +1,5 @@
 import Navbar from "./Components/Navbar";
+import Content from "./Components/Content";
 
 import "./App.css";
 
@@ -6,12 +7,10 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      
       <main>
-        {/* Aquí van los demás componentes y contenido de tu aplicación */}
-        <section>
-          <h1>Welcome to My Website</h1>
-          <p>This is the home page.</p>
-        </section>
+        <Content />
+        
       </main>
     </div>
   );
